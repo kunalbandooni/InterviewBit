@@ -1,0 +1,17 @@
+"First Statement"
+
+- You should take offer #1, because you can guarantee yourself an arbitrarily 
+large amount of money, simply by using the following as your statement:
+
+“I will receive neither $10 nor $1000.”
+
+If we assume the statement is true, this leads to a contradiction because you 
+would receive $10, by the rules.
+
+If we assume the statement is false, then to satisfy the falsity of the statement, 
+you must receive either $10 or $1000. But since you cannot receive $10 if the 
+statement is false, you must receive $1000.
+
+Of course you can use any amount in place of “$1000.”
+
+// For better explanation, refer YouTube :)
