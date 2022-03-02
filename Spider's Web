@@ -1,0 +1,9 @@
+Geometric Progression question
+// Or if you are really smart, aptitude question
+
+Given, spider took 15 days to complete.
+Also, doubles each day.
+
+Therefore, on 14th day (a day before) = 100/2 = 50%
+
+Hence, on 13th day (two days before) = 50/2 = 25%
