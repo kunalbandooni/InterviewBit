@@ -1,0 +1,49 @@
+Solution:- 3
+
+
+Explanation:- 
+
+Divide the balls into 3 groups of 4 balls.
+
+First weigh :
+
+Weigh 2 groups, one on each side.
+
+There will be two cases :
+
+The weight on both side is equal i. e. these two groups don’t have the defective ball.
+One side has less weight than the other side.
+Case 1 : You know 8 balls are of equal weight and one of the remaining 4 balls have a defective one. Name these four as B1, B2, B3, B4.
+
+** Second weigh :**
+
+Take B1, B2 and weight them.
+
+If they are unequal then either B1 is defective or B2. Compare B1 with one of eight balls. If B1 is equal to that then B2 is defective otherwise B1.
+Total measurements in this case : 1 (first weigh) + 1 (second weigh) + 1 (B1 with other ball) = 3
+If B1 and B2 are equal then either B3 is defective or B4. Compare B3 with one of eight balls. If B3 is equal to that then B4 is defective otherwise B3.
+Total measurements in this case : 1 (first weigh) + 1 (second weigh) + 1 (B3 with other ball) = 3
+Case 2 : Mark the balls in the side with less weight as L and with more weight as M. We get 4L and 4M.
+
+Second weigh :
+
+Take 2L and 1M in One side say A and take 2L and 1M in Other side say B of balance system. 1M and 1L are reserved for now.
+
+If side A is down and next side goes up then it has two possibilities.
+One of 2L in A has less weight than other 7 balls
+The 1M in B has more weight
+If side B is down then it also has two possibilities.
+One of 2L in A has less weight than other 7 balls
+One of 1M in B has more weight than other 7 balls
+Both sides are balanced
+Third weigh :
+
+In cases (i) or (ii) we will get 3 balls (2L and 1M) after the second weigh.
+
+For case (i) and (ii)of (b) :
+
+Weigh two L balls with each other, if they are equal then the 1M is heavier and if they are not then the ball with less weight is defective.
+
+For case (iii) of (b) :
+
+In this case one of the two reserved balls is defective. We have 2M balls. Weigh them, the one which is heavier is defectives.
