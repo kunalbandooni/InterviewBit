@@ -1,0 +1,22 @@
+Solution:- Infinity
+
+Explanation:-
+The north pole is one such place.
+
+But, there are infinite points on Earth, which result same.
+As, Earth is round... (Visualize on the Globe)
+
+More Explanation:-
+However, consider the points 1 + 1/(2*pi) miles away 
+from the south pole. Call point A any of these 
+(infinite number of) points. Go a mile south to point
+B. When you go a mile east, you end up back at point 
+B (you travelled once through every line of longitude). 
+A mile north then brings you back to point A.
+
+There are points still closer to the south pole such
+that going a mile east brings you through each line
+of longitude exactly twice, three times, or as many
+times as you want. Thus we have an infinite number of
+concentric rings of infinite numbers of points, and
+we can start a mile north of any of them.
