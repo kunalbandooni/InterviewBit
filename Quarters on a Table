@@ -1,0 +1,16 @@
+Player 1 has a strategy to win.
+His first move is to put a quarter in the exact center of the table. 
+
+Player 2 then places a quarter anywhere on the table
+(but not in the center, of course). Now convince 
+yourself that Player 1 always has a legal move: by 
+playing a quarter diametrically opposite from the quarter
+Player 2 just put down (i.e., Player 1's first quarter is
+the midpoint of the line between Player 2's last quarter 
+and Player 1's last quarter). We continue until we fill up
+the table, but since Player 1 always has a legal move, it 
+is only Player 2 that will be faced with no legal move. 
+Then Player 1 wins.
+
+Note that this strategy works even in the degenerate 
+case when the table is the size of a quarter.
