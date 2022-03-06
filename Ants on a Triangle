@@ -1,0 +1,18 @@
+Solution:- 0.25
+
+Explanation:-
+
+Let the three ants are a, b, c.
+
+There are two cases when they will not collide, the one is 
+when they all move clockwise and the other is when they 
+all move anticlockwise.
+
+They will collide if any two ants move towards each other, 
+at the same time the third ant can move in clockwise or in
+anticlockwise. so for each pair there are 2 such cases. And
+there are 3 pairs possible (a,b), (b,c) and (c,a).
+So total 3*2 = 6 cases when they will collide.
+(Think yourself now :D )
+
+So probability that they will not collide is 2/(2+6) i.e. 1/4 or 0.25
