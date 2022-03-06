@@ -1,0 +1,24 @@
+Hint:- 
+Try all the combinations you can make out, 
+and try to put the statements inline.
+Only one will make sense.
+
+Solution:- Truth Tribe
+
+Explanation:-
+
+Possible Combination:-
+TLL
+LTL
+LLT
+
+Lets assume that first person is from Truth tribe,
+then he will claim that he is from the truth tribe,
+in which case the second person is lying.
+
+Now assume that first person is from Lie tribe.
+Even then, he will say that he belongs to the 
+truth tribe (as he is a liar), so second 
+person is lying again in this case as well.
+
+Thus third person is correct in both the scenarios, hence he belongs to Truth Tribe.
