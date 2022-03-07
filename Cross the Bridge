@@ -1,0 +1,18 @@
+Solution:- 17
+
+Explanation:-
+
+First, 1 and 2 will go
+      1 comes back
+      
+      Time = 3
+      
+Second, 5 and 10 will go
+      2 comes back
+      
+      Time = 3 + 12 = 15
+      
+Third, 1 and 2 will go 
+      
+      Time = 15 + 2 = 17
+      
