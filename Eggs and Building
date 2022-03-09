@@ -2,6 +2,8 @@ Solution: 14
 
 Explanation:
 
+*Try this video too: https://www.youtube.com/watch?v=uBhSIKLlvdk*
+
 First thought which comes to our mind is to use binary search,
 we first drop Egg#1 from 50th floor, if it does not break,
 then try the middle of second half, if breaks then we have to
