@@ -1,0 +1,30 @@
+Solution: 14
+
+Explanation:
+
+First thought which comes to our mind is to use binary search,
+we first drop Egg#1 from 50th floor, if it does not break,
+then try the middle of second half, if breaks then we have to
+try each floor in first half. But this will give worst case 
+number of drops as 50(if it brakes on 50th floor, then we 
+have to try from 1 to 49 floors sequentially).
+
+Second thought is to try xth floor then 2xth floor till 100th,
+in this case worst case time will be (100/x)+(x-1). worst case
+will be when Egg #1 breaks at 100th floor then we have to try
+Egg #2 from (100-x)th to 99th floors. In (100/x) + (x-1)
+equation, with increase in x, 100/x decreases while (x-1)
+increases, thus we can minimize it when 100/x = (x-1), this 
+gives x ~10, which gives worst case number as 19 drops.
+
+But increasing the floor every time by x is not a very nice 
+idea, as with each new increase in Egg #1 drop, we should 
+decrease Egg #2 drops to minimize worst case number. so if 
+we drop Egg #1 from xth floor initially, then in next turn
+we should try x + (x-1)th floor(to keep the worst case number same).
+
+Thus we can say X + (x-1) + (x-2)…1 = 100
+
+X(X+1)/2 = 100 => X=14.
+
+So we should drop Egg #1 from 14th, then 27th, then 39th and so on.
