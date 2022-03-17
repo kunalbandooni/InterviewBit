@@ -1,0 +1,42 @@
+Solution: 338
+
+Explanation:
+We know that there are 3 daughters whose ages
+multiply to 72. Let’s look at the possibilities.
+
+Ages:          Sum of ages:
+
+1 1 72            74
+
+1 2 36            39
+
+1 3 24            28
+
+1 4 18            23
+
+1 6 12            19
+
+1 8 9             18
+
+2 2 18            22
+
+2 3 12            17
+
+2 4 9             15
+
+2 6 6             14
+
+3 3 8             14
+
+3 4 6             13
+
+After looking at the building number the second 
+man still can’t figure out what their ages are, 
+so that means that the sum of the ages (or 
+building number) must be 14, since that is the 
+only sum that has more than one possibility. 
+Finally the man discovers that there is an 
+oldest daughter. That rules out the “2 6 6″
+possibility since the two oldest would be 
+twins. Therefore, the daughters ages must 
+be “3 3 8″.
