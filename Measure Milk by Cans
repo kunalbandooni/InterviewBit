@@ -1,0 +1,56 @@
+Solution: 1 3 9 27
+
+Explanation:
+
+  1 = 1
+	3 - 1 = 2
+	3 = 3
+	3 + 1 = 4
+	9 - 3 - 1 = 5
+	9 - 3 = 6
+	9 - 3 + 1 = 7
+	9 - 1 = 8
+	9 = 9
+	9 + 1 = 10
+	9 + 3 - 1 = 11
+	9 + 3 = 12
+	9 + 3 + 1 = 13
+	27 - 9 - 3 - 1 = 14
+	27 - 9 - 3 = 15
+	27 - 9 - 3 + 1 = 16
+	27 - 9 - 1 = 17
+	27 - 9 = 18
+	27 - 9 + 1 = 19
+	27 - 9 + 3 - 1 = 20
+	27 - 9 + 3 = 21
+	27 - 9 + 3 + 1 = 22
+	27 - 3 - 1 = 23
+	27 - 3 = 24
+	27 - 3 + 1 = 25
+	27 - 1 = 26
+	27 = 27
+	27 + 1 = 28
+	27 + 3 - 1 = 29
+	27 + 3 = 30
+	27 + 3 + 1 = 31
+	27 + 9 - 3 - 1 = 32
+	27 + 9 - 3 = 33
+	27 + 9 - 3 + 1 = 34
+	27 + 9 - 1 = 35
+	27 + 9 = 36
+	27 + 9 + 1 = 37
+	27 + 9 + 3 - 1 = 38
+	27 + 9 + 3 = 39
+	27 + 9 + 3 + 1 = 40
+  
+The right way to think about the solution is
+that when you have x cans which let you measure
+all volumes from 1 to N, you now want to 
+include 2*N + 1 as your next can. That way, 
+all weights from N + 1 to 2*N can be measured 
+by subtracting N to 1 ( which we already know 
+how to form using the x cans that we have ) from
+2*N + 1. Also, all weights from 2*N + 2 to
+3*N + 1 can be formed by adding 1 to N ( which
+we already know how to form using the x cans
+that we have ) to 2*N + 1 can.
