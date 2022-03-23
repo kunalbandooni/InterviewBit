@@ -1,5 +1,17 @@
 // TC: O(logn)
 int Solution::solve(vector<int> &a) {
+    /*
+    Approach:
+    
+    The idea is based on the technique of Binary Search to 
+    check if the middle element is the peak element or not. 
+    If the middle element is not the peak element, then 
+    check if the element on the right side is greater than
+    the middle element then there is always a peak element
+    on the right side. If the element on the left side is
+    greater than the middle element then there is always a
+    peak element on the left side.
+    */
     int l=0,h=a.size()-1;
     while(l<h)
     {
