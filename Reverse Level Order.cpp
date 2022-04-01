@@ -10,7 +10,7 @@
 
 // Simple Solution
 vector<int> Solution::solve(TreeNode* A) {
-    vector<int> G,i;
+    vector<int> G;
     queue<TreeNode* > Q;
     TreeNode* root = A;
     Q.push(A);
@@ -23,9 +23,8 @@ vector<int> Solution::solve(TreeNode* A) {
         if(root->left)
             Q.push(root->left);
     }
-    for(int j = G.size()-1;j>=0;j--)        
-        cout<<G[j]<<" ";
-    return i;
+    reverse(G.begin(),G.end());
+    return G;
 }
 
 // TC: O(n)
