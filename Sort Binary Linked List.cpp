@@ -6,6 +6,9 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+// Easiest approach can be to count frequency of zeroes and ones,
+//      and then update accordingly :)
 ListNode* Solution::solve(ListNode* A) {
     if(A==NULL||A->next==NULL){
         return A;
