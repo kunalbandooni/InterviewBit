@@ -1,3 +1,19 @@
+/*
+
+Explanation:
+
+We keep the track of balance of the string i:e the number 
+of ‘(‘ minus the number of ‘)’. A string is valid if its 
+balance is 0, and also every prefix has non-negative balance.
+
+Now, consider the balance of every prefix of A. If it is 
+ever negative (say, -1), we must add a ‘(‘ bracket at the
+beginning. Also, if the balance of S is positive (say, +P), 
+we must add P times ‘)’ brackets at the end.
+
+Time Complexity: O(A)
+
+*/
 // Fastest Solution
 int Solution::solve(string A){
     int i,count,len,k;
