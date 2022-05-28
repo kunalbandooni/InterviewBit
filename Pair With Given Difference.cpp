@@ -1,24 +1,17 @@
 int Solution::solve(vector<int> &A, int B) {
     B=abs(B);
     int N=A.size();
-    if(N==1) 
-        return 0;
+    if(N==1) return 0;
     sort(A.begin(),A.end());
-    int start=0;
-    int end=1;
-    while(start<=end && start<=N-2 && end<=N-1){
-        if(A[end]-A[start]==B){
-            if(end!=start) return 1;
-            else end++;
-        }
-        else if(A[end]-A[start]<B){
-            end++;
-        }
-        else{
-            if(A[end]<0) end++;
-            else if(A[end]>=0 && A[start]<0 && end-start>1) start++;
-            else start++;
-        }
+    // We are doing A[j] - A[i]. So if diff < B we must inc A[j]. So j++
+    //And if diff > B we should i ++
+    //Takes care of both cases : B +ve and -ve
+    int i = 0, j = 1, diff = 0;
+    while(i <= N && j <=N){
+        diff = A[j] - A[i];
+        if(i != j && diff == B) return 1;
+        else if(diff < B) j++;
+        else i++;
     }
     return 0;
 }
