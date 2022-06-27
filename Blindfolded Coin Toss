@@ -1,0 +1,29 @@
+You are blindfolded and 10 coins are place in front of you on table. 
+You are allowed to touch the coins, but can’t tell which way up they are by feel.
+You are told that there are 5 coins head up, and 5 coins tails up but not which ones are which.
+Can you make two piles of coins each with the same number of heads up? 
+You can flip the coins any number of times.
+
+Solution:-
+
+YES
+
+Explanation:-
+
+Make 2 piles with equal number of coins. Now, flip all the coins in one of the pile.
+How this will work? lets take an example.
+So initially there are 5 heads, so suppose you divide it in 2 piles.
+
+Case:
+P1 : H H T T T
+P2 : H H H T T
+Now when P1 will be flipped
+P1 : T T H H H
+P1(Heads) = P2(Heads)
+
+Another case:
+P1 : H T T T T
+P2 : H H H H T
+Now when P1 will be flipped
+P1 : H H H H T
+P1(Heads) = P2(Heads)
