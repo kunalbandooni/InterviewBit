@@ -1,0 +1,9 @@
+Write a SQL Query to find the name of all reviewers who have rated their ratings with a NULL value.
+
+Output Schema:
+
+reviewer_name
+
+Solution:
+
+select DISTINCT r.reviewer_name from reviewers r ,ratings ra where r.reviewer_id=ra.reviewer_id and ra.reviewer_stars IS NULL
