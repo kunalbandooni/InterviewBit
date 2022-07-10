@@ -1,0 +1,29 @@
+Problem:
+You have two jars, 50 red marbles and 50 blue marbles.
+You need to place all the marbles into the jars such 
+that when you blindly pick one marble out of one jar,
+you maximize the chances that it will be red. When 
+picking, you’ll first randomly pick a jar, and then
+randomly pick a marble out of that jar. You can arrange
+the marbles however you like, but each marble must be 
+in a jar. What is the maximum probability?
+
+Solution:
+0.75
+
+Explanation:
+
+If we put a single red marble in one jar and the rest of 
+the marbles in the other jar, there is at least a 50%
+chance of getting a red marble, since one randomly picked 
+marble, doesn’t leave much room for choice.
+
+Now, there are 49 red marbles left in the other jar, and
+there is nearly even chance of picking a red marble (49 out of 99).
+Calculating the total probability will give us:
+
+P(red marble ) = P(Jar 1) * P (red marble in Jar 1) + P (Jar 2) * P (red marble in Jar 2)
+
+P(red marble) = 0.5 * 1 + 0.5 * 49/99
+
+P(red marble ) = 0.7474 = 0.75
