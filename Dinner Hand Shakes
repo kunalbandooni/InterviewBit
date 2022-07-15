@@ -1,0 +1,19 @@
+Solution:
+N-1
+
+
+Explanation:
+
+The possible numbers of handshakes range from 0 to 2N-2. (2N-1 would require that a person shook hands with every other person at the party, but nobody shook hands with his/her spouse.)
+
+This is 2N-1 different numbers, and the host got 2N-1 different answers, so every number is represented.
+
+One person (0) shook no hands, and another (2N-2) shook hands with everybody from all the other couples. This is only possible if these two are a married couple, because otherwise 2N-2 would have had to have shaken 0’s hand.
+
+One person (1) shook only 2N-2’s hand, and another (2N-3) shook hands with everybody from all the other couples except 0. Again, these two must be married, or else 2N-3 would have had to have shaken 1’s hand, a contradiction.
+
+. . .
+
+Continuing this logic, eventually you pair up all the couples besides the hosts, each one pairing a shook-no-hands-not-already-mentioned person with a shook-all-hands-not-already-mentioned person, the last having shaken N-2 and N hands respectively.
+
+This tells us that the hostess must have shaken N-1 hands, by process of elimination, though we don’t have to use the elimination – since we have N-1 shook-no-other-hands people and N-1 shook-all-other-hands people, we know that both the host and hostess shook hands with exactly one member of each couple – the same ones – and thus each shook N-1 people’s hands
