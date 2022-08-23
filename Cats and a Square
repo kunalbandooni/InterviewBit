@@ -1,0 +1,33 @@
+Suppose that there is a unit square. There are four cats sitting 
+at the four different corners of the square. Each of those cats 
+start chasing the other cat in the clockwise direction. The speed
+of the cats are same and constant and they continuously change 
+their direction in a manner that they are always heading straight
+to the other cat.
+
+How long will it take for the cats to catch each other?
+
+Assume that each cat is running at 1 unit speed.
+
+
+Solution: 
+
+Let us denote the cats with A, B, C and D in a fashion that A is 
+chasing B, B is chasing C, C is chasing D and D is chasing A.
+The cats are moving in symmetry and thus the only logical answer 
+is that they will meet at the center of the square. 
+
+At any point of time, the Cat A is perpendicular to cat B and 
+Cat B is perpendicular to Cat C and so on. Cat A runs for 
+Cat B but Cat B does not run towards or away from Cat A for it
+is moving in a perpendicular direction to Cat A. Thus the distance 
+that need to be covered by Cat A to grab Cat B will be exactly 
+same as the original distance between them which in this case 
+is one unit (as it is a unit square).
+
+Thus the speed of each cat towards the cat it is chasing will 
+be [1 + cos (x)] where x denotes the angle on each corner.
+
+Thus speed of the cat = 1 + cos (90) = 1 + 0 = 1
+
+The time needed = Distance / Speed = 1/1 = 1 unit
