@@ -1,0 +1,10 @@
+Solution: Red
+
+The only way the red color can be removed is only when two red balls are taken out. To make it more understandable
+if BB a blue ball goes out a blue ball goes in
+if BR a blue ball goes out a red ball goes in
+if RR a red ball goes out a red ball goes in
+
+Which also means which ever order of balls we go with.To remove a red ball completely we need another red ball so unless no of red balls>=2 a red ball cannot be removed. For the last two red balls a red ball is removed and only a single red ball remains in the bag.
+If you use the same two rules on removing blue you will understand that a blue is removed even when a blue ball is available and a red ball is available
+Reply
