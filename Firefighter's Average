@@ -1,0 +1,4 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT AVG(PeopleSaved) FROM FIREFIGHTERS where countrycode = 'PM';
