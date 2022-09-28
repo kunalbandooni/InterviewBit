@@ -1,0 +1,4 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT COUNT(Country) FROM PLACES where (Country LIKE '%a' OR Country LIKE '%e' OR Country LIKE '%i' OR Country LIKE '%o' OR Country LIKE '%u');
