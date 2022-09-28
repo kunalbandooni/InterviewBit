@@ -1,0 +1,4 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT SUM(e.Count) as A FROM ENGINEER e JOIN DATA d ON d.id = e.id GROUP BY d.Type ORDER BY d.Type ASC;
