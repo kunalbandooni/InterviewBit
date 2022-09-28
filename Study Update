@@ -1,0 +1,6 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+UPDATE STUDY set Marks = 50 where Marks>25 and Marks<50;
+
+SELECT * FROM STUDY;
