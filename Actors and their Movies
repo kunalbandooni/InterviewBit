@@ -1,0 +1,19 @@
+SELECT movie_title
+
+FROM movies
+
+JOIN movies_cast
+
+ON movies_cast.movie_id=movies.movie_id
+
+JOIN actors
+
+ON movies_cast.actor_id=actors.actor_id
+
+WHERE actors.actor_id IN (
+
+SELECT actor_id
+
+FROM movies_cast
+
+GROUP BY actor_id HAVING COUNT(*)>=2);
