@@ -1,0 +1,7 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+
+SELECT COUNT(Name) FROM EMPLOYEE e JOIN EVALUATION ev ON e.Points BETWEEN ev.Lower AND ev.Upper WHERE ev.Rating < 3;
+
+SELECT COUNT(Name) FROM EMPLOYEE e JOIN EVALUATION ev ON e.Points BETWEEN ev.Lower AND ev.Upper WHERE ev.Rating > 8;
