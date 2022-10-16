@@ -1,0 +1,29 @@
+There are ( N+1 ) people in a party, they might or might not know each others names. 
+
+There is one celebrity in the group (total N + 1 people), celebrity does not know any of N peoples by name and all N people know celebrity by name.
+
+You are given the list of people’s names (N + 1),
+
+You can ask only one question from the people.
+
+	Do you know this name?
+How many maximum number of questions you need to ask to know the celebrity name?
+
+Note: assume all names are unique. and you know the persons by name (but don’t know if he is celebrity )
+
+
+SOLUTION:
+
+N
+
+EXPLANATION:
+
+Let’s say you ask from A that Do you know B?If A knows B => A can not be a celebrity.
+
+If A does not know B then B can not be a celebrity.
+
+So you strike out one name from your list, so on each question you can reject one name.
+
+When there are only two people left in the list, then you will ask first person, “Do you know the second person ?”. If he says yes then second person is the celebrity and if he says no then the first person is the celebrity.
+
+Thus you need to ask a maximum of n questions to correctly figure out celebrity name.
