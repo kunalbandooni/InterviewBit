@@ -1,0 +1,5 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT COUNT(id) AS A FROM WORKERS
+WHERE DailyWage * DaysWorked = (SELECT MAX(DailyWage * DaysWorked) FROM WORKERS);
