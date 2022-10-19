@@ -1,0 +1,5 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT concat(Role,' ','Count ','is ', count(Role)) AS 'COUNT' FROM GAMERS
+GROUP BY Role ORDER BY count(Role);
