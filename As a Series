@@ -1,0 +1,15 @@
+import pandas as pd
+import collections
+from collections import Counter
+import random
+def solve(string):
+    """
+    returns a series object with word count as index and words as the values.
+    """
+    count_dict = Counter(string.split())
+    l1=list(count_dict.items())
+    l1.sort(key=lambda x:x[0])
+    idxs, vals = zip(*l1)
+#    idxs,vals = list(count_dict.keys()), list(count_dict.values())
+    result = pd.Series(vals, index=idxs)
+    return result
