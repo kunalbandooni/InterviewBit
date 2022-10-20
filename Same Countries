@@ -1,0 +1,8 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT l1.Name AS Labourer1,l2.Name AS Labourer2,l2.Country AS Country
+FROM LABOURERS AS l1 join LABOURERS AS l2
+ON l1.Country =l2.Country
+WHERE l1.Name <> l2.Name
+ORDER BY Labourer1,Labourer2,l1.Country;
