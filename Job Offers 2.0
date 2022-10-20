@@ -1,0 +1,6 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT SUM(DISTINCT(Salary)) AS Salary FROM Students, Departments, Jobs
+WHERE Students.Id = Jobs.Id AND Students.DepartmentId = Departments.DepartmentId
+AND DepartmentName = "CSE";
