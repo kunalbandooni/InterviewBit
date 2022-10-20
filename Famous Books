@@ -1,0 +1,4 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT BooksId as Id From BoughtBooks Group By BooksId HAVING COUNT(*)>2;
