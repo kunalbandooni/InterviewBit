@@ -1,0 +1,11 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT
+CASE
+ WHEN A<0 THEN "Negative"
+ WHEN A>0 THEN "Positive"
+ WHEN A=0 THEN "Zero"
+ ELSE "Invalid"
+END AS A
+FROM( SELECT (A+B+C) AS A FROM NUMBERS) AS tab;
