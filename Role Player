@@ -1,0 +1,6 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT CONCAT(Player, '(', SUBSTRING(Role, 1,1), ')') AS 'N' 
+FROM GAMERS 
+ORDER BY Player;
