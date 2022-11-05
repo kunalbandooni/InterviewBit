@@ -1,0 +1,18 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+select Name from Students order by
+case
+   when (LEFT(Name , 1) IN ('a','e','i','o','u'))
+   then case
+            when(Marks1<=Marks2)
+            then Marks1
+            else Marks2
+         end
+   else case
+            when(Marks1>=Marks1)
+            then Marks1
+            else Marks2
+         end
+end
+desc;
