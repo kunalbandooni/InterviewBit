@@ -1,0 +1,76 @@
+#!/bin/bash
+# Incase you have to take input, please take it from file named 'input' (without quotes) [e.g. cat input]
+# Print your final output to console. Do not redirect to another file.
+# E.g. Suppose the question is to print the content of a file.
+#      Your solution should be 'cat input'(without quotes) instead of 'cat input > output'. That's it!
+# Your code starts from here...
+A[0]="Z"
+A[1]="I"
+A[2]="II"
+A[3]="III"
+A[4]="IV"
+A[5]="V"
+A[6]="VI"
+A[7]="VII"
+A[8]="VIII"
+A[9]="IX"
+
+B[0]="Z"
+B[1]="X"
+B[2]="XX"
+B[3]="XXX"
+B[4]="XL"
+B[5]="L"
+B[6]="LX"
+B[7]="LXX"
+B[8]="LXXX"
+B[9]="XC"
+
+C[0]="Z"
+C[1]="C"
+C[2]="CC"
+C[3]="CCC"
+C[4]="CD"
+C[5]="D"
+C[6]="DC"
+C[7]="DCC"
+C[8]="DCCC"
+C[9]="CM"
+
+D[0]="Z"
+D[1]="M"
+D[2]="MM"
+D[3]="MMM"
+D[4]="MMMM"
+
+while read num
+do
+  	if [ $num -ge 1000 ]
+  	then
+  		th=`expr $num / 1000`
+  		echo -n "${D[$th]}"
+  	fi
+
+  	num=`expr $num % 1000`
+  	
+  	if [ $num -ge 100 ]
+  	then
+  		h=`expr $num / 100`
+  		echo -n "${C[$h]}"
+  	fi
+
+  	num=`expr $num % 100`
+
+  	if [ $num -ge 10 ]
+  	then
+  		t=`expr $num / 10`
+  		echo -n "${B[$t]}"
+  	fi
+
+  	num=`expr $num % 10`
+  	if [ $num -ge 1 ]
+  	then
+  		echo -n "${A[$num]}"
+  	fi
+  	echo
+done < input
