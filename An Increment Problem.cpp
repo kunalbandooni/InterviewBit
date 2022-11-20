@@ -1,16 +1,17 @@
 vector<int> Solution::solve(vector<int> &A) {
-    unordered_map<int, int> mp;
-   
-    for(int i = 0; i < A.size(); i++){
-        auto itr = mp.find(A[i]);
-        if(itr == mp.end())
-            mp.insert({A[i], i});
+    unordered_map<int,priority_queue<int,vector<int>,greater<int>>>m;
+    int n=A.size();
+    for(int i=0;i<n;i++){
+        if(m.find(A[i])==m.end()){
+            m[A[i]].push(i);
+        }
         else{
-            A[itr->second]++;
-            mp[A[itr->second]] = itr->second;
-            mp[A[i]] = i;
+            int idx=m[A[i]].top();
+            m[A[i]].pop();
+            A[idx]++;
+            m[A[idx]].push(idx);
+            m[A[i]].push(i);
         }
     }
-   
     return A;
 }
