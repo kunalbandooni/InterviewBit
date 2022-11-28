@@ -1,5 +1,5 @@
 int Solution::maximumGap(const vector<int> &A) {
-    if(A.size() <= 2)   return 0;
+    if(A.size() < 2)   return 0;
     vector <int> B;
     for(int i=0;i<A.size();i++)
         B.push_back(A[i]);
