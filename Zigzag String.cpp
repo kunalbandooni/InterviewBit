@@ -1,4 +1,4 @@
-string Solution::convert(string A, int B) {
+string Solution::convert(string s, int numRows) {
     if(s.length()<=2 || numRows==1) return s;
     int j=0,k=0;
     string res="";
