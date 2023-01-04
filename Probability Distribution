@@ -1,0 +1,2 @@
+def calculate_probability(M,V,W):
+  return round(((np.random.normal(M,np.sqrt(V),100000))>W).sum()/100000,2)
