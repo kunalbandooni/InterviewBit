@@ -1,0 +1,6 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+select concat(Name,",",Date) As Offers from 
+(select s.Id, j.Date, s.Name, s.DepartmentId, d.DepartmentName from Students as s Inner Join Departments as d ON s.DepartmentId=d.DepartmentId Inner Join Jobs as j On s.Id=j.Id) As t 
+where t.Date Is Not NULL order by t.DepartmentName;
