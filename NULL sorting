@@ -1,0 +1,9 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+Select Name From (Select Name,
+Case
+    When Marks = 'Absent' Then NULL
+    Else Marks
+End as Mark 
+From Students Order by Mark Desc, Name Asc) A;
