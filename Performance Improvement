@@ -1,0 +1,4 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+Select t2.TestId from Tests as t1, Tests as t2 where((t1.TestId=t2.TestId-1) and (t1.Marks<t2.Marks));
