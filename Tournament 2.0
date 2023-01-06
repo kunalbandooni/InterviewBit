@@ -1,0 +1,4 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+select format(sum(Result)/count(Result),4) as 'Percentage Wins' from Matches where PlayerId2  not in (select Id from Team2 where Cheater=1) group by Date order by Date;
