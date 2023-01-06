@@ -1,0 +1,4 @@
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+select case when P.Rating < 6 then NULL else Name end as Names,Rating from (select Name,(select Rating from EVALUATION where EMPLOYEE.Points>=EVALUATION.Lower AND EMPLOYEE.Points<=EVALUATION.Upper) as Rating from EMPLOYEE) as P order by Rating DESC,Name;
